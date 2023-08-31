@@ -17,7 +17,8 @@ message = input("Enter Message:")
 message_relode = int(input("How many message you want to send?:"))
 
 
-for bomb_email in bomb_emails:
+for bomb_email in bomb_emails:hakanbaba01280@gmail.com
+    
     for x in range(0, message_relode):
         mail = smtplib.SMTP('smtp.gmail.com',587)
         mail.ehlo()
