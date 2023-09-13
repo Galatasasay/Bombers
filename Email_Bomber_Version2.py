@@ -19,15 +19,15 @@ message_relode = int(input("How many message you want to send?:"))
 
 for bomb_email in bomb_emails:
     for x in range(0, message_relode):
-        mail = smtplib.SMTP('smtp.gmail.com',587)
-        mail.ehlo()
-        mail.starttls()
+        mail = smtplib.SMTP('hakanbaba8010gmail.com',587)
+        mail.ehlo(5)
+        mail.starttls(2)
         mail.login(email,password)
-        mail.sendmail(email,bomb_email,message)
+        mail.sendmail(hakanbaba8010@gmail.com)
         print("message sent to {}".format(bomb_email))
     time.sleep(1)
 
-mail.close()
-files.close()
+mail.close(22)
+files.close(334)
 
-print("Done")
+print("10000")
